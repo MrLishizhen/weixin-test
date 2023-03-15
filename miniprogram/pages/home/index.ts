@@ -11,7 +11,11 @@ Page({
 
     }
   },
-
+  to_list:(event:any)=>{
+    const {id} = event.currentTarget.dataset;
+    wx.navigateTo({url:`/pages/list/index?id=${id}`})
+    console.log(id)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -51,14 +55,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+  
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    console.log(124566)
   },
 
   /**

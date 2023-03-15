@@ -14,17 +14,22 @@
     </swiper>  
   <!-- tab切换 -->
   <view class="home_tabs">
-    <scroll-view scroll-x="true" class="tabs_scroll" style="height: 180rpx;">
-          <view id="demo1" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
-          <view id="demo2" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
-          <view id="demo3" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
-          <view id="demo1" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
-          <view id="demo2" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
-          <view id="demo3" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
+    <scroll-view scroll-x="true" enhanced show-scrollbar="{{false}}" class="tabs_scroll" >
+          <view id="demo1" bindtap="to_list" data-id="{{1}}" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2" bindtap="to_list" data-id="{{2}}" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" bindtap="to_list" data-id="{{3}}" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
+          <view id="demo1" bindtap="to_list" data-id="{{4}}" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2" bindtap="to_list" data-id="{{5}}" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" bindtap="to_list" data-id="{{6}}" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
     </scroll-view>
   </view>
   <!-- 热点文章 -->
   <view class="home_list_hot">
-    
+    <view class="home_hot_title">
+      热点文章
+    </view>
+    <view class="home_list">
+      <essay_item wx:key="index" wx:for="{{8}}"></essay_item> 
+    </view> 
   </view>
 </view>

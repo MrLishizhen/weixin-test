@@ -1,0 +1,10 @@
+<!--components/essay_item/index.wxml-->
+<view class="essay_item_box">
+    <view class="essay_item_left_top">
+      <view class="essay_item_title ellipsis">{{list.essay_title}}</view>
+      <view class="essay_item_sub ellipsis">{{list.essay_sub}}</view>
+    </view>
+    <view class="essay_item_botton ellipsis">
+      {{list.essay_content}}
+    </view>
+</view>

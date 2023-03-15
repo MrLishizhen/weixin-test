@@ -1,7 +1,7 @@
 /* pages/home/index.wxss */
 .home{
   min-height: 100vh;
-  background-color:aqua;
+  // background-color:aqua;
   .banner{
     height:380rpx;
     background:blanchedalmond;
@@ -13,12 +13,14 @@
   .home_tabs{
     width: 100%;
     height:180rpx;
-    background-color: chartreuse;
-    padding:40rpx;
+    // background-color: chartreuse;
+    padding:0 40rpx;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-self:center;
     .tabs_scroll{
       width: 100%;
-      display: flex;
       white-space: nowrap;
       // flex-direction: column;
     }
@@ -31,6 +33,17 @@
       &:last-child{
         margin: 0;
       }
+    }
+  }
+
+  .home_list_hot{
+    padding-bottom: 20rpx;
+    .home_hot_title{
+      font-size:16px;
+      margin:0rpx 40rpx 20rpx;
+    }
+    .home_list{
+      padding:0 40rpx;
     }
   }
 }
