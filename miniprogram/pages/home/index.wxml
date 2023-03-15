@@ -1,0 +1,30 @@
+<!--pages/home/index.wxml-->
+<view class="home">
+  <!-- banner宣传 -->
+    <swiper class="banner"
+    indicator-dots="{{swiper_data.indicatorDots}}"
+    indicator-active-color="{{'#fff'}}"
+    autoplay="{{true}}"
+    circular="{{true}}"
+    >
+      <swiper-item wx:for="{{swiper_list}}"
+      wx:key="index">
+        <view style="background:{{item.color}}" class="swiper-item"></view>
+      </swiper-item>
+    </swiper>  
+  <!-- tab切换 -->
+  <view class="home_tabs">
+    <scroll-view scroll-x="true" class="tabs_scroll" style="height: 180rpx;">
+          <view id="demo1" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
+          <view id="demo1" style="background:#c0c0c0" class="scroll-view-item demo-text-1"></view>
+          <view id="demo2" style="background:#d2d2d2" class="scroll-view-item demo-text-2"></view>
+          <view id="demo3" style="background:#a2a2d2" class="scroll-view-item demo-text-3"></view>
+    </scroll-view>
+  </view>
+  <!-- 热点文章 -->
+  <view class="home_list_hot">
+    
+  </view>
+</view>
