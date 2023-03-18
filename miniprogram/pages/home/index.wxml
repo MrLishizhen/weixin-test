@@ -29,7 +29,7 @@
       热点文章
     </view>
     <view class="home_list">
-      <essay_item wx:key="index" wx:for="{{8}}"></essay_item> 
+      <essay_item bindtap="essay_item" data-id="{{index}}" wx:key="index" wx:for="{{8}}"></essay_item> 
     </view> 
   </view>
 </view>

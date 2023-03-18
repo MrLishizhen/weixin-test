@@ -1,26 +1,13 @@
-// pages/home/index.ts
+// pages/article/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    swiper_list:[{name:'孙悟空',color:'red'},{name:'猪八戒',color:'#ccc'},{name:'天蓬元帅',color:'#b0b0b0'}],
-    swiper_data:{
-      indicatorDots:true,
 
-    }
   },
-  to_list:(event:any)=>{
-    const {id} = event.currentTarget.dataset;
-    wx.navigateTo({url:`/pages/list/index?id=${id}`})
-    console.log(id)
-  },
-  essay_item:(event:any)=>{
-    const {id} = event.currentTarget.dataset;
-    wx.navigateTo({url:`/pages/article/index?id=${id}`})
-    console.log(event)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -60,14 +47,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    console.log(124566)
+
   },
 
   /**

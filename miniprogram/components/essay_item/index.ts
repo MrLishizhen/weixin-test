@@ -25,6 +25,8 @@ Component<any,IList,any>({
    * 组件的方法列表
    */
   methods: {
-
+    toLink:(id:number)=>{
+      
+    }
   }
 })
